@@ -26,7 +26,7 @@ export function AdminRoute({ children }: AdminRouteProps) {
 
   // Not logged in
   if (!user) {
-    return <Navigate to="/login" state={{ from: location }} replace />;
+    return <Navigate to="/admin/login" state={{ from: location }} replace />;
   }
 
   // Not an admin

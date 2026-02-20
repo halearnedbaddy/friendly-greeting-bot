@@ -18,6 +18,7 @@ import AdminOverview from "./pages/admin/AdminOverview";
 import AdminBusinesses from "./pages/admin/AdminBusinesses";
 import AdminCompliance from "./pages/admin/AdminCompliance";
 import AdminTransactions from "./pages/admin/AdminTransactions";
+import AdminLogin from "./pages/admin/AdminLogin";
 import DashboardOverview from "./pages/DashboardOverview";
 import DashboardSettings from "./pages/DashboardSettings";
 import DashboardCompliance from "./pages/DashboardCompliance";
@@ -134,6 +135,7 @@ const App = () => (
               }
             />
             {/* Admin Routes */}
+            <Route path="/admin/login" element={<AdminLogin />} />
             <Route
               path="/admin"
               element={
