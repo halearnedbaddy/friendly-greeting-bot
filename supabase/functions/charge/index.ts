@@ -211,7 +211,7 @@ serve(async (req) => {
         })
         .eq("id", transactionId);
 
-      return errorResponse(`STK Push failed: ${darajaError.message}`, 502);
+      return errorResponse(`STK Push failed: ${(darajaError as Error).message}`, 502);
     }
   } catch (error) {
     console.error("Charge error:", error);
