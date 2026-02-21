@@ -41,6 +41,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useAdmin } from "@/hooks/useAdmin";
 import { toast } from "@/hooks/use-toast";
 import { SandboxBanner } from "./SandboxBanner";
+import ComplianceBanner from "./compliance/ComplianceBanner";
 
 const overviewItems = [
   { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
@@ -271,8 +272,9 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
             </div>
           </header>
 
-          {/* Sandbox Banner */}
+          {/* Banners */}
           <SandboxBanner />
+          <ComplianceBanner />
 
           {/* Content */}
           <main className="flex-1 overflow-y-auto p-6">
