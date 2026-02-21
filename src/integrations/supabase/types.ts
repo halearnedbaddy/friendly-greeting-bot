@@ -74,6 +74,120 @@ export type Database = {
         }
         Relationships: []
       }
+      admin_notifications: {
+        Row: {
+          created_at: string | null
+          id: string
+          message: string | null
+          metadata: Json | null
+          read: boolean | null
+          title: string
+          type: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          message?: string | null
+          metadata?: Json | null
+          read?: boolean | null
+          title: string
+          type: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          message?: string | null
+          metadata?: Json | null
+          read?: boolean | null
+          title?: string
+          type?: string
+        }
+        Relationships: []
+      }
+      compliance_submissions: {
+        Row: {
+          admin_notes: string | null
+          agreement_signed: boolean | null
+          business_cert_name: string | null
+          business_cert_url: string | null
+          created_at: string | null
+          current_step: number | null
+          developer_id: string
+          director_full_name: string | null
+          expected_monthly_volume: string | null
+          id: string
+          kra_pin: string | null
+          national_id_back_name: string | null
+          national_id_back_url: string | null
+          national_id_front_name: string | null
+          national_id_front_url: string | null
+          phone_number: string | null
+          physical_address: string | null
+          rejection_reason: string | null
+          reviewed_at: string | null
+          signatory_name: string | null
+          signed_at: string | null
+          status: string | null
+          submitted_at: string | null
+          updated_at: string | null
+          use_case_description: string | null
+        }
+        Insert: {
+          admin_notes?: string | null
+          agreement_signed?: boolean | null
+          business_cert_name?: string | null
+          business_cert_url?: string | null
+          created_at?: string | null
+          current_step?: number | null
+          developer_id: string
+          director_full_name?: string | null
+          expected_monthly_volume?: string | null
+          id?: string
+          kra_pin?: string | null
+          national_id_back_name?: string | null
+          national_id_back_url?: string | null
+          national_id_front_name?: string | null
+          national_id_front_url?: string | null
+          phone_number?: string | null
+          physical_address?: string | null
+          rejection_reason?: string | null
+          reviewed_at?: string | null
+          signatory_name?: string | null
+          signed_at?: string | null
+          status?: string | null
+          submitted_at?: string | null
+          updated_at?: string | null
+          use_case_description?: string | null
+        }
+        Update: {
+          admin_notes?: string | null
+          agreement_signed?: boolean | null
+          business_cert_name?: string | null
+          business_cert_url?: string | null
+          created_at?: string | null
+          current_step?: number | null
+          developer_id?: string
+          director_full_name?: string | null
+          expected_monthly_volume?: string | null
+          id?: string
+          kra_pin?: string | null
+          national_id_back_name?: string | null
+          national_id_back_url?: string | null
+          national_id_front_name?: string | null
+          national_id_front_url?: string | null
+          phone_number?: string | null
+          physical_address?: string | null
+          rejection_reason?: string | null
+          reviewed_at?: string | null
+          signatory_name?: string | null
+          signed_at?: string | null
+          status?: string | null
+          submitted_at?: string | null
+          updated_at?: string | null
+          use_case_description?: string | null
+        }
+        Relationships: []
+      }
       conditions: {
         Row: {
           account_id: string
